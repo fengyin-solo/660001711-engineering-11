@@ -98,6 +98,9 @@ htmlcov/
 storybook-static/
 *.local
 
+# 渲染性能基线的本地数据（测量结果与转译产物；门槛文件 perf/perf-baseline.json 入库）
+frontend/.perf/
+
 # =========================
 # Python
 # =========================

@@ -1,0 +1,57 @@
+{
+  "// 说明": "星图渲染性能基线门槛 —— 构建 (perf:check) 与本地开发 (perf) 共用同一份文件。平均帧耗时超过 budgets[用例id] 即失败；新增/删除缩放档或图层组合时必须同步补齐 budgets，runner 会对缺失项或非法值报错。",
+  "simulation": {
+    "canvasWidth": 1600,
+    "canvasHeight": 900,
+    "viewTime": "2026-03-20T21:30:00+08:00",
+    "latitude": 39.9,
+    "panX": 0,
+    "panY": 0
+  },
+  "measurement": {
+    "globalWarmupFrames": 120,
+    "warmupFrames": 30,
+    "frames": 200
+  },
+  "zoomTiers": [
+    { "id": "low", "zoom": 0.5 },
+    { "id": "mid", "zoom": 1.0 },
+    { "id": "high", "zoom": 2.5 }
+  ],
+  "layerCombos": [
+    { "id": "all-on",       "showLabels": true,  "showConstLines": true,  "showGrid": true  },
+    { "id": "labels-lines", "showLabels": true,  "showConstLines": true,  "showGrid": false },
+    { "id": "labels-grid",  "showLabels": true,  "showConstLines": false, "showGrid": true  },
+    { "id": "labels-only",  "showLabels": true,  "showConstLines": false, "showGrid": false },
+    { "id": "lines-grid",   "showLabels": false, "showConstLines": true,  "showGrid": true  },
+    { "id": "lines-only",   "showLabels": false, "showConstLines": true,  "showGrid": false },
+    { "id": "grid-only",    "showLabels": false, "showConstLines": false, "showGrid": true  },
+    { "id": "all-off",     "showLabels": false, "showConstLines": false, "showGrid": false }
+  ],
+  "budgets": {
+    "low__all-on":       0.20,
+    "low__labels-lines": 0.08,
+    "low__labels-grid":  0.18,
+    "low__labels-only":  0.07,
+    "low__lines-grid":   0.18,
+    "low__lines-only":   0.08,
+    "low__grid-only":    0.18,
+    "low__all-off":      0.07,
+    "mid__all-on":       0.20,
+    "mid__labels-lines": 0.08,
+    "mid__labels-grid":  0.18,
+    "mid__labels-only":  0.07,
+    "mid__lines-grid":   0.18,
+    "mid__lines-only":   0.08,
+    "mid__grid-only":    0.18,
+    "mid__all-off":      0.07,
+    "high__all-on":      0.20,
+    "high__labels-lines": 0.08,
+    "high__labels-grid":  0.18,
+    "high__labels-only":  0.07,
+    "high__lines-grid":   0.18,
+    "high__lines-only":   0.08,
+    "high__grid-only":    0.18,
+    "high__all-off":      0.07
+  }
+}

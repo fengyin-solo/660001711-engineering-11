@@ -16,3 +16,12 @@
 ```bash
 cd frontend && npm install && npm run dev
 ```
+
+## 渲染性能基线
+固定 3 个缩放档（低/中/高）× 3 个图层开关的 8 种组合共 24 组参数跑渲染，逐帧计时并与门槛对照：
+```bash
+cd frontend
+npm run perf        # 本地测量，结果保存在 .perf/ 供下次对照
+npm run perf:check  # 构建用，超门槛即失败；已串联进 npm run build
+```
+详见 [frontend/perf/README.md](frontend/perf/README.md)。
