@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-23T17:53:16.245Z",
+  "headroom": 1.5,
+  "jitterFloorMs": 0.05,
+  "worstJitterFloorMs": 0.08,
+  "trimTailFraction": 0.05,
+  "configSignature": "{\"canvas\":{\"width\":1600,\"height\":900},\"latitude\":39.9,\"startTimeMs\":1735689600000,\"timeStepMs\":3600000,\"warmupFrames\":30,\"measureFrames\":200,\"globalWarmupFrames\":200,\"trimTailFraction\":0.05,\"zoomTiers\":[{\"id\":\"low\",\"zoom\":0.5},{\"id\":\"mid\",\"zoom\":1},{\"id\":\"high\",\"zoom\":2.5}],\"layerCombos\":[{\"id\":\"all-off\",\"showLabels\":false,\"showConstLines\":false,\"showGrid\":false},{\"id\":\"labels-only\",\"showLabels\":true,\"showConstLines\":false,\"showGrid\":false},{\"id\":\"lines-only\",\"showLabels\":false,\"showConstLines\":true,\"showGrid\":false},{\"id\":\"grid-only\",\"showLabels\":false,\"showConstLines\":false,\"showGrid\":true},{\"id\":\"labels-lines\",\"showLabels\":true,\"showConstLines\":true,\"showGrid\":false},{\"id\":\"labels-grid\",\"showLabels\":true,\"showConstLines\":false,\"showGrid\":true},{\"id\":\"lines-grid\",\"showLabels\":false,\"showConstLines\":true,\"showGrid\":true},{\"id\":\"all-on\",\"showLabels\":true,\"showConstLines\":true,\"showGrid\":true}]}",
+  "entries": [
+    {
+      "caseId": "low__all-off",
+      "zoomTierId": "low",
+      "comboId": "all-off",
+      "layers": "labels off | lines off | grid off",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.127,
+      "worstMs": 0.189
+    },
+    {
+      "caseId": "low__labels-only",
+      "zoomTierId": "low",
+      "comboId": "labels-only",
+      "layers": "labels on | lines off | grid off",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.129,
+      "worstMs": 0.19
+    },
+    {
+      "caseId": "low__lines-only",
+      "zoomTierId": "low",
+      "comboId": "lines-only",
+      "layers": "labels off | lines on | grid off",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.107,
+      "worstMs": 0.17
+    },
+    {
+      "caseId": "low__grid-only",
+      "zoomTierId": "low",
+      "comboId": "grid-only",
+      "layers": "labels off | lines off | grid on",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.195,
+      "worstMs": 0.271
+    },
+    {
+      "caseId": "low__labels-lines",
+      "zoomTierId": "low",
+      "comboId": "labels-lines",
+      "layers": "labels on | lines on | grid off",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.089,
+      "worstMs": 0.144
+    },
+    {
+      "caseId": "low__labels-grid",
+      "zoomTierId": "low",
+      "comboId": "labels-grid",
+      "layers": "labels on | lines off | grid on",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.133,
+      "worstMs": 0.189
+    },
+    {
+      "caseId": "low__lines-grid",
+      "zoomTierId": "low",
+      "comboId": "lines-grid",
+      "layers": "labels off | lines on | grid on",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.138,
+      "worstMs": 0.196
+    },
+    {
+      "caseId": "low__all-on",
+      "zoomTierId": "low",
+      "comboId": "all-on",
+      "layers": "labels on | lines on | grid on",
+      "zoom": 0.5,
+      "frames": 200,
+      "meanMs": 0.14,
+      "worstMs": 0.195
+    },
+    {
+      "caseId": "mid__all-off",
+      "zoomTierId": "mid",
+      "comboId": "all-off",
+      "layers": "labels off | lines off | grid off",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.074,
+      "worstMs": 0.106
+    },
+    {
+      "caseId": "mid__labels-only",
+      "zoomTierId": "mid",
+      "comboId": "labels-only",
+      "layers": "labels on | lines off | grid off",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.075,
+      "worstMs": 0.11
+    },
+    {
+      "caseId": "mid__lines-only",
+      "zoomTierId": "mid",
+      "comboId": "lines-only",
+      "layers": "labels off | lines on | grid off",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.08,
+      "worstMs": 0.113
+    },
+    {
+      "caseId": "mid__grid-only",
+      "zoomTierId": "mid",
+      "comboId": "grid-only",
+      "layers": "labels off | lines off | grid on",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.132,
+      "worstMs": 0.189
+    },
+    {
+      "caseId": "mid__labels-lines",
+      "zoomTierId": "mid",
+      "comboId": "labels-lines",
+      "layers": "labels on | lines on | grid off",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.081,
+      "worstMs": 0.115
+    },
+    {
+      "caseId": "mid__labels-grid",
+      "zoomTierId": "mid",
+      "comboId": "labels-grid",
+      "layers": "labels on | lines off | grid on",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.133,
+      "worstMs": 0.19
+    },
+    {
+      "caseId": "mid__lines-grid",
+      "zoomTierId": "mid",
+      "comboId": "lines-grid",
+      "layers": "labels off | lines on | grid on",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.138,
+      "worstMs": 0.195
+    },
+    {
+      "caseId": "mid__all-on",
+      "zoomTierId": "mid",
+      "comboId": "all-on",
+      "layers": "labels on | lines on | grid on",
+      "zoom": 1,
+      "frames": 200,
+      "meanMs": 0.139,
+      "worstMs": 0.195
+    },
+    {
+      "caseId": "high__all-off",
+      "zoomTierId": "high",
+      "comboId": "all-off",
+      "layers": "labels off | lines off | grid off",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.074,
+      "worstMs": 0.107
+    },
+    {
+      "caseId": "high__labels-only",
+      "zoomTierId": "high",
+      "comboId": "labels-only",
+      "layers": "labels on | lines off | grid off",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.075,
+      "worstMs": 0.108
+    },
+    {
+      "caseId": "high__lines-only",
+      "zoomTierId": "high",
+      "comboId": "lines-only",
+      "layers": "labels off | lines on | grid off",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.079,
+      "worstMs": 0.113
+    },
+    {
+      "caseId": "high__grid-only",
+      "zoomTierId": "high",
+      "comboId": "grid-only",
+      "layers": "labels off | lines off | grid on",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.131,
+      "worstMs": 0.187
+    },
+    {
+      "caseId": "high__labels-lines",
+      "zoomTierId": "high",
+      "comboId": "labels-lines",
+      "layers": "labels on | lines on | grid off",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.08,
+      "worstMs": 0.115
+    },
+    {
+      "caseId": "high__labels-grid",
+      "zoomTierId": "high",
+      "comboId": "labels-grid",
+      "layers": "labels on | lines off | grid on",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.133,
+      "worstMs": 0.189
+    },
+    {
+      "caseId": "high__lines-grid",
+      "zoomTierId": "high",
+      "comboId": "lines-grid",
+      "layers": "labels off | lines on | grid on",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.138,
+      "worstMs": 0.194
+    },
+    {
+      "caseId": "high__all-on",
+      "zoomTierId": "high",
+      "comboId": "all-on",
+      "layers": "labels on | lines on | grid on",
+      "zoom": 2.5,
+      "frames": 200,
+      "meanMs": 0.139,
+      "worstMs": 0.194
+    }
+  ]
+}

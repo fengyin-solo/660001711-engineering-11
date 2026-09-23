@@ -16,3 +16,15 @@
 ```bash
 cd frontend && npm install && npm run dev
 ```
+
+## 渲染性能基线
+固定缩放档位（低/中/高）× 三个图层开关的 8 种组合，逐帧（时间按步长推进）测量帧耗时并与门槛对照，防止渲染回归。
+
+```bash
+cd frontend
+npm run perf           # 本地对照 perf/baseline.json 门槛，超门槛退出码 1
+npm run perf:update    # 有意变更渲染逻辑后重新生成门槛，结果随代码提交
+npm run build          # 构建末尾自动执行同一道门槛检查（与本地共用脚本与门槛文件）
+```
+
+详见 `frontend/perf/README.md`。

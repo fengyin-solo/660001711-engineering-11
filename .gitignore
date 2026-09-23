@@ -234,3 +234,6 @@ sandbox/
 *.pid
 *.seed
 *.pid.lock
+
+# perf baseline 运行时缓存（baseline.json 需要提交复用，不要忽略）
+frontend/perf/.cache/
